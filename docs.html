@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Google Docs</title>
+
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/e/ec/GDocs_Favicon_Recreation.png">
+
+<style>
+body {
+    margin: 0;
+    background: #f8f9fa;
+}
+
+img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    display: block;
+}
+</style>
+</head>
+
+<body>
+
+<img src="https://iili.io/BY3lPbR.png" alt="Google Docs">
+
+<script>
+// ============================
+// SHIFT+TAB = RETURN TO LAST PAGE
+// ============================
+
+document.addEventListener('keydown', function(e) {
+    const isShiftTab =
+        e.shiftKey &&
+        (e.key === 'Tab' || e.code === 'Tab' || e.keyCode === 9);
+
+    if (isShiftTab) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+
+        const lastPage = sessionStorage.getItem("lastPage");
+
+        if (lastPage) {
+            window.location.replace(lastPage);
+        } else {
+            window.location.replace("/");
+        }
+    }
+}, true);
+</script>
+
+</body>
+</html>
