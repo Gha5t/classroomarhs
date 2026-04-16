@@ -1,0 +1,2561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-11292QMYXH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-11292QMYXH');
+</script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://homeworkplanet.github.io/home.html">
+  <title>Homework Planet - Best Browser Online Homework Games for Striving Students</title>
+  <link rel="icon" href="https://png.pngtree.com/png-clipart/20221219/ourmid/pngtree-pencil-clipart-png-image_6529094.png" type="image/png">
+
+  <script>
+  (function () {
+    document.addEventListener("DOMContentLoaded", function () {
+      if (sessionStorage.getItem("adblockChecked")) return;
+      sessionStorage.setItem("adblockChecked", "1");
+      const bait = document.createElement("div");
+      bait.className = "adsbox ad-banner ad-placement";
+      bait.style.position = "absolute";
+      bait.style.left = "-999px";
+      document.body.appendChild(bait);
+      setTimeout(function () {
+        if (bait.offsetHeight === 0) {
+          document.getElementById("adblock-overlay").style.display = "flex";
+        }
+        bait.remove();
+      }, 200);
+    });
+  })();
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, Arial, sans-serif;
+      color: #fff;
+      background:
+        linear-gradient(
+          rgba(15,18,32,0.88),
+          rgba(15,18,32,0.88)
+        ),
+        url("https://wallpapers.com/images/hd/dark-blue-aesthetic-calm-lake-oprig3tpij9dxsic.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .site-logo {
+      position: fixed;
+      top: 12px;
+      left: 16px;
+      z-index: 9999;
+    }
+    .site-logo img {
+      height: 72px;
+    }
+    .kofi-btn {
+      position: fixed;
+      top: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9999;
+      background: #1c223c;
+      padding: 8px 14px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+    .kofi-btn img {
+      height: 26px;
+    }
+    .kofi-btn span {
+      font-weight: 700;
+      font-size: 14px;
+      color: #ff5e5e;
+    }
+    .content {
+      padding: 100px 24px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 14px;
+      justify-items: center;
+    }
+    .game-card {
+      width: 100px;
+      height: 100px;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    }
+    .game-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: #000;
+    }
+    .game-label {
+      width: 80px; /* ← unchanged width (no length extension) */
+      background: #1c223c;
+      padding: 12px 8px; /* ← taller height only, minimal side padding */
+      font-size: 10px;
+      font-weight: 600;
+      border-radius: 0 0 12px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+    }
+    .game-title {
+  flex: 1;
+  white-space: normal; /* Allows the text to wrap to the next line */
+  word-wrap: break-word; /* Prevents super long words from breaking the layout */
+  line-height: 1.2; /* Adds a little breathing room between lines */
+}
+   #adblock-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 18, 32, 0.96);
+  z-index: 100000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+#adblock-overlay.show {
+  display: flex;
+  opacity: 1;
+}
+
+#adblock-popup {
+  background: #1c223c;
+  border-radius: 14px;
+  padding: 32px 28px;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6),
+              0 0 20px rgba(79, 124, 255, 0.25);
+  border: 1px solid rgba(79, 124, 255, 0.18);
+  opacity: 0;
+  transform: scale(0.92);
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+#adblock-overlay.show #adblock-popup {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#adblock-popup h2 {
+  margin: 0 0 16px;
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(79, 124, 255, 0.4);
+}
+
+#adblock-popup p {
+  margin: 0 0 24px;
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+#adblock-popup button {
+  background: #28304f;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+#adblock-popup button:hover {
+  background: #4f7cff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(79, 124, 255, 0.5);
+}
+
+#adblock-popup button:active {
+  transform: translateY(0);
+}
+    .game-desc {
+      display: block;
+      opacity: 0;
+      font-size: 10px;
+      text-align: center;
+      color: #ccc;
+      margin-top: 2px;
+      max-width: 100px;
+      line-height: 1.2em;
+      transition: opacity 0.25s ease;
+    }
+    .game-card-container:hover .game-desc {
+      opacity: 1;
+    }
+    .game-card-container a {
+      text-decoration: none;
+      color: white;
+    }
+    .game-card-container a:visited {
+      color: white;
+    }
+    .search-bar-fixed {
+      position: fixed;
+      top: 18px;
+      right: 20px;
+      width: 220px;
+      padding: 10px 14px;
+      border-radius: 14px;
+      border: 1px solid transparent;
+      background: #1c223c;
+      color: white;
+      font-size: 13px;
+      outline: none;
+      z-index: 9999;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+    }
+    .search-bar-fixed:hover {
+      border-color: #4f7cff;
+      box-shadow: 0 0 10px rgba(79, 124, 255, 0.35);
+      transform: translateY(-1px);
+    }
+    .search-bar-fixed:focus {
+      border-color: #4f7cff;
+      box-shadow: 0 0 14px rgba(79, 124, 255, 0.55);
+    }
+    .search-bar-fixed::placeholder {
+      color: #9aa0c4;
+    }
+    .socials-footer {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding-bottom: 30px;
+    }
+    .socials-footer a img {
+      width: 25px;
+      height: 25px;
+      transition: transform 0.2s, filter 0.2s;
+    }
+    .socials-footer a:hover img {
+      transform: scale(1.3);
+      filter: drop-shadow(0 0 8px #4f7cff);
+    }
+
+    /* Category styling */
+    .category-section {
+      margin-bottom: 50px;
+    }
+    .category-header {
+      text-align: center;
+      margin: 30px 0 15px;
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(79, 124, 255, 0.4);
+    }
+
+    /* Favorites */
+    .game-card-container {
+      position: relative;
+    }
+
+    .fav-star {
+      font-size: 19px;
+      color: #555;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      user-select: none;
+      flex-shrink: 0;
+    }
+
+    .fav-star.favorited {
+      color: #ffd700;
+      text-shadow: 0 0 10px #ffaa00;
+      transform: scale(1.2);
+    }
+
+    #view-favorites-btn {
+      position: fixed;
+      top: 14px;
+      left: 24%;
+      transform: translateX(-120px);
+      z-index: 9999;
+      background: #1c223c;
+      color: #ffd700;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 8px 14px;
+      border-radius: 14px;
+      border: 1px solid #4f7cff44;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    #view-favorites-btn:hover {
+      background: #28304f;
+      border-color: #ffd70066;
+      box-shadow: 0 0 12px rgba(255, 215, 0, 0.25);
+    }
+
+    #view-favorites-btn.active {
+      background: #4f7cff;
+      color: white;
+      border-color: #ffd700;
+    }
+
+    .games-grid.favorites-mode .game-card-container:not(.favorited) {
+      display: none !important;
+    }
+
+   #hide-tab-btn {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%, 0); /* combine X + Y */
+  z-index: 9999;
+  background: #1c223c;
+  color: #4f7cff;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 8px 16px;
+  border-radius: 14px;
+  border: 1px solid #4f7cff44;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+#hide-tab-btn:hover {
+  background: #28304f;
+  border-color: #4f7cff;
+  box-shadow: 0 0 12px rgba(79, 124, 255, 0.35);
+  color: #fff;
+  transform: translate(-50%, -1px); /* keep X centering */
+}
+
+#hide-tab-btn:active {
+  transform: translate(-50%, 0); /* keep X centering */
+}
+
+     #submit-game-btn {
+    position: fixed;
+    top: 14px;
+    left: 70%;                    /* Positioned between search bar and favorites */
+    transform: translateX(-50%);
+    z-index: 9999;
+    background: #1c223c;
+    color: #4f7cff;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 8px 16px;
+    border-radius: 14px;
+    border: 1px solid #4f7cff44;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+  }
+
+  #submit-game-btn:hover {
+    background: #28304f;
+    border-color: #4f7cff;
+    box-shadow: 0 0 12px rgba(79, 124, 255, 0.35);
+    color: #fff;
+    transform: translateX(-50%) translateY(-1px);
+  }
+
+  #submit-game-btn:active {
+    transform: translateX(-50%) translateY(0);
+  }
+    #changelog-btn {
+    position: fixed;
+    top: 90px;
+    left: 94.5%;
+    transform: translate(-50%, 0);
+    z-index: 9999;
+    
+    background: #1c223c;
+    color: #4f7cff;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 8px 16px;
+    border-radius: 14px;
+    border: 1px solid #4f7cff44;
+    
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    font-family: sans-serif;
+    
+    /* Optional: prevent text selection */
+    user-select: none;
+}
+
+#changelog-btn:hover {
+    background: #28304f;
+    border-color: #4f7cff;
+    box-shadow: 0 0 12px rgba(79, 124, 255, 0.35);
+    color: #fff;
+    transform: translate(-50%, -1px);
+}
+
+#changelog-btn:active {
+    transform: translate(-50%, 0);
+}
+       #bookmark-btn {
+    position: fixed;
+    top: 14px;
+    left: 32%;                    
+    transform: translateX(-50%);
+    z-index: 9999;
+    background: #1c223c;
+    color: #4f7cff;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 8px 16px;
+    border-radius: 14px;
+    border: 1px solid #4f7cff44;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+  }
+
+  #bookmark-btn:hover {
+    background: #28304f;
+    border-color: #4f7cff;
+    box-shadow: 0 0 12px rgba(79, 124, 255, 0.35);
+    color: #fff;
+    transform: translateX(-50%) translateY(-1px);
+  }
+
+  #bookmark-btn:active {
+    transform: translateX(-50%) translateY(0);
+  }
+
+    
+  </style>
+  
+</head>
+<body>
+
+<script src="preloader2.js"></script>
+
+<div style="display: none;">
+<script>
+  atOptions = {
+    'key' : '69fabbaaeb7265118a19b1b3c0daeb4a',
+    'format' : 'iframe',
+    'height' : 300,
+    'width' : 160,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/69fabbaaeb7265118a19b1b3c0daeb4a/invoke.js"></script>
+</div>
+
+  <div style="display: none;">
+<script>
+  atOptions = {
+    'key' : 'cedfa4bcd32915ec8bb77c05d0a71c7f',
+    'format' : 'iframe',
+    'height' : 60,
+    'width' : 468,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/cedfa4bcd32915ec8bb77c05d0a71c7f/invoke.js"></script>
+</div>
+
+  <div style="display: none;">
+<script>
+  atOptions = {
+    'key' : '723161d618be2ad7b86fdba6a918c1b0',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/723161d618be2ad7b86fdba6a918c1b0/invoke.js"></script>
+</div>
+
+  <div style="display: none;">
+<script>
+  atOptions = {
+    'key' : '4732dffd9c312c7ca2be94254e316f88',
+    'format' : 'iframe',
+    'height' : 600,
+    'width' : 160,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/4732dffd9c312c7ca2be94254e316f88/invoke.js"></script>
+</div>
+
+  <div style="display: none;">
+<script>
+  atOptions = {
+    'key' : 'b5b85d61b9a052010732a076a5ad6e7c',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/b5b85d61b9a052010732a076a5ad6e7c/invoke.js"></script>
+</div>
+
+  <div style="display: none;">
+<script>
+  atOptions = {
+    'key' : 'fab9999e2eb116da8531a1fd7aa81231',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/fab9999e2eb116da8531a1fd7aa81231/invoke.js"></script>
+</div>
+
+  
+  <input
+    type="text"
+    id="gameSearch"
+    placeholder="Search games…"
+    onkeyup="searchGames()"
+    class="search-bar-fixed"
+  />
+
+  <!-- NEW: Submit Game Request Button -->
+  <button id="submit-game-btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSf1tE6rElRrAsp0xc2WSgYdOXOy1ffFsg3IzdlffGS7E_Semg/viewform?usp=publish-editor', '_blank')">
+    <span>📝</span>
+    <span>Submit Game</span>
+  </button>
+
+  <script src="panic.js"></script>
+
+  <button id="changelog-btn">
+    <span>✨</span>
+    <span>Changelog</span>
+</button>
+
+   <button id="bookmark-btn">
+    <span>📚</span>
+    <span>Hidden Bookmark</span>
+</button>
+
+  <div id="adblock-overlay">
+    <div id="adblock-popup">
+      <h2>Please support Homework Planet ❤️</h2>
+      <p>Hey Homework Planet user! You're not obligated to, but disabling your adblocker would greatly help keep the site free and running. Thanks for understanding!</p>
+      <button id="continue-btn">Continue</button>
+    </div>
+  </div>
+<a href="home.html" class="site-logo">
+  <img src="https://i.imgur.com/QXhoS1t.png">
+</a>
+
+<a href="https://ko-fi.com/homeworkplanet" target="_blank" class="kofi-btn">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Ko-fi_Logo.png">
+  <span>Support Homework Planet!</span>
+</a>
+
+<!-- FAVORITES BUTTON -->
+<button id="view-favorites-btn">
+  <span>⭐</span>
+  <span>Favorites</span>
+</button>
+
+<div class="content">
+
+<br>
+
+<p class="home-seo" style="text-align: center;">
+  Homework Planet offers <b>free unblocked browser games</b> playable online at school.
+  All games run in your browser, work on Chromebooks, and requires no downloads. Below are
+  <b>all of the games and tools our website offers. Shoutout to StudiesQuest (studiesquest.github.io)</b>
+</p>
+  
+<!-- GAMES CATEGORY -->
+<div class="category-section">
+  <h2 class="category-header">Games</h2>
+  <div class="games-grid" id="games-grid">
+
+    <div class="game-card-container">
+      <a href="emulators.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3O6Nc2_tz_Ckyu92AZN3vstO36Z0II3TwNQ&s" alt="Game Emulators">
+        </div>
+        <div class="game-label">Game Emulators</div>
+        <div class="game-desc">Play games from any console and any generation.</div>
+      </a>
+    </div>
+    
+    <div class="game-card-container">
+      <a href="slope.html">
+        <div class="game-card">
+          <img src="https://1games.io/data/image/game/slope/banner/slope.jpg" alt="Slope">
+        </div>
+        <div class="game-label">Slope</div>
+        <div class="game-desc">Race down a twisting, fast‑paced course dodging obstacles and testing your reflexes.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="roblox.html">
+        <div class="game-card">
+          <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/5X/c/4/c/2/c4c28132e4907f73ea0430d18d769c06276e39cc.png" alt="Roblox">
+        </div>
+        <div class="game-label">Roblox</div>
+        <div class="game-desc">Play a wide variety of user-created games and experiences in this open online platform.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="cookieclicker.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/cookieclickerthumb-m180x180.png" alt="Cookie Clicker">
+        </div>
+        <div class="game-label">Cookie Clicker</div>
+        <div class="game-desc">Cookie Clicker is an iconic, addictive incremental idle game where players click a giant cookie to bake cookies, using them to buy upgrades like grandmas, farms, and factories to automate production.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="minecraft.html">
+        <div class="game-card">
+          <img src="https://i.pinimg.com/736x/bd/cb/64/bdcb6414071ce880f3fa1dc18e2eda5b.jpg" alt="Minecraft">
+        </div>
+        <div class="game-label">Minecraft</div>
+        <div class="game-desc">Explore, build, and survive in a blocky open world with endless creative possibilities.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="tag.html">
+        <div class="game-card">
+          <img src="https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=314,height=314,fit=cover,f=auto/32d2b1401c7a86c61fae5afeed977b37/tag.png" alt="Tag">
+        </div>
+        <div class="game-label">Tag</div>
+        <div class="game-desc">Run, chase, and outmaneuver your friends in a simple but fun tag‑style game.</div>
+      </a>
+    </div>
+
+       <div class="game-card-container">
+      <a href="tag2.html">
+        <div class="game-card">
+          <img src="https://taggame.io/cache/data/image/game/tag-game-2-f200x200.webp" alt="Tag 2">
+        </div>
+        <div class="game-label">Tag 2</div>
+        <div class="game-desc">Pass the bomb to other players before time runs out in this modern version of Tag (Requested by @valizade.nadir12)</div>
+      </a>
+    </div>
+  
+   <div class="game-card-container">
+      <a href="buckshot.html">
+        <div class="game-card">
+          <img src="https://fngames.io/cache/data/image/game/buckshot-roulette-1-m200x200.jpg" alt="Buckshot Roulette">
+        </div>
+        <div class="game-label">Buckshot Roulette</div>
+        <div class="game-desc">Test your luck and nerves in a deadly game of chance where every trigger pull could be your last.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="xbox.html">
+        <div class="game-card">
+          <img src="https://play-lh.googleusercontent.com/hihXCV-0wxOXB5N7uBREaJeCVK0BDjNEBtKwNAncftZMflpEvasiKXn7vCKxu9qGpvk=w512-h512-rw" alt="Xbox Cloud Gaming">
+        </div>
+        <div class="game-label">Xbox Cloud Gaming</div>
+        <div class="game-desc">Stream and play console‑style games right in your browser with cloud play support.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="kirka.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSItdGiUA3TU-r1TudkOqhFIOAzRYF0Lxyr_g&s" alt="Kirka.io">
+        </div>
+        <div class="game-label">Kirka.io</div>
+        <div class="game-desc">Compete in fast‑paced multiplayer arena action collecting points and avoiding enemies.</div>
+      </a>
+    </div>
+
+    
+    <div class="game-card-container">
+      <a href="stumbleguys.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtyTWbuw7bFLBLIGLygG-juU2y76Z49rPJFPLxaJvv9H-9k3XdvphdUQw&s=10" alt="Stumble Guys">
+        </div>
+        <div class="game-label">Stumble Guys</div>
+        <div class="game-desc">Battle friends or random people in challenging minigames where the last one standing wins!</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="retrobowl.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ46HgUizPW9eKLlyTRAOFvaR2NKAn9TX5Ckg&s" alt="Retro Bowl">
+        </div>
+        <div class="game-label">Retro Bowl</div>
+        <div class="game-desc">Lead your football team to victory with strategy and arcade action.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="drivemad.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/drivemad-m180x180.png" alt="Drive Mad">
+        </div>
+        <div class="game-label">Drive Mad</div>
+        <div class="game-desc">Navigate your car through strategic and tricky puzzles in this exciting driving game.</div>
+      </a>
+    </div>
+  
+    <div class="game-card-container">
+      <a href="run3.html">
+        <div class="game-card">
+          <img src="https://assets1.ignimgs.com/2018/06/18/run-3-0-button-1529363477468.jpg" alt="Run 3">
+        </div>
+        <div class="game-label">Run 3</div>
+        <div class="game-desc">Dash and jump through endless space tunnels while avoiding gaps and gravity shifts in this fast-paced endless runner.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="smashkarts.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/smash-karts-m180x180.jpg" alt="Smash Karts">
+        </div>
+        <div class="game-label">Smash Karts</div>
+        <div class="game-desc">Battle other players in chaotic kart races with pickups and power‑ups.</div>
+      </a>
+    </div>
+
+  <div class="game-card-container">
+      <a href="td3.html">
+        <div class="game-card">
+          <img src="https://bloonstowerdefense.io/upload/imgs/bloons-tower-defense-3-logo.png" alt="Bloons Tower Defense 3">
+        </div>
+        <div class="game-label">Bloons Tower Defense 3</div>
+        <div class="game-desc">Place towers strategically to pop waves of balloons in this classic tower defense game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="td5.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiV04u-XqL3iIwBpcEIwxRAEW5QU8Q9mjAAA&s" alt="Bloons Tower Defense 5">
+        </div>
+        <div class="game-label">Bloons Tower Defense 5</div>
+        <div class="game-desc">Use your defense skills in this popular, family-friendly tower defense game where you deploy monkeys and upgrade towers to pop incoming waves of balloons</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="td6.html">
+        <div class="game-card">
+          <img src="https://play-lh.googleusercontent.com/4te8y2It_nyY4yX5jcSEFaTDro98302l9EnSbkJyCobGUo8GWxteV_8kJ8nlXyStxw" alt="Bloons Tower Defense 6">
+        </div>
+        <div class="game-label">Bloons Tower Defense 6</div>
+        <div class="game-desc">Place brand new towers to pop unique waves of balloons in this revamped tower defense game.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="golfhit.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMowxltXdXxKwKJ-yB8kdEJP3SHV_3fPRLTg&s" alt="Golf Hit">
+        </div>
+        <div class="game-label">Golf Hit</div>
+        <div class="game-desc">Whack golf balls into outer space in this fun, casual golfing game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="ragdollarchers.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdwguBfXdDfj3Dzr_T_p67D_YeKHWci7YfPA&s" alt="Ragdoll Archers">
+        </div>
+        <div class="game-label">Ragdoll Archers</div>
+        <div class="game-desc">Shoot arrows using ragdoll physics to hit targets with satisfying wobbly animation.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="geometrydash.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/logo_of_geometry_dash.svg-m180x180.png" alt="Geometry Dash">
+        </div>
+        <div class="game-label">Geometry Dash</div>
+        <div class="game-desc">Jump and fly through rhythmic obstacle courses in this precision platformer.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="rivals.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZyTsVAoiZ3VQw7Sh-7jbbOy7EzomsMQiJQ&s" alt="RIVALS">
+        </div>
+        <div class="game-label">RIVALS</div>
+        <div class="game-desc">Compete in fast‑paced multiplayer matches against others in action‑packed arenas.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="burnoutdrift.html">
+        <div class="game-card">
+          <img src="https://gamebol.com/public/upload/icon/drift.webp" alt="Burnout Drift">
+        </div>
+        <div class="game-label">Burnout Drift</div>
+        <div class="game-desc">Perform long, controlled drifts on various tracks in this 3D browser-based driving game focusing on high-speed drifting and car customization.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="burnoutdrift2.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYgpXMNe-rOFdjpGA84GYkrp_YHIl8mYwHBQ&s" alt="Burnout Drift 2">
+        </div>
+        <div class="game-label">Burnout Drift 2</div>
+        <div class="game-desc">Perform long, controlled drifts down hilltops in this 3D browser-based driving game focusing on high-speed drifting and car customization.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="burnoutdrift3.html">
+        <div class="game-card">
+          <img src="https://imgs.crazygames.com/auto-covers/burnout-drift-seaport-max_1x1.png?format=auto&quality=100&metadata=none&width=1200" alt="Burnout Drift 3">
+        </div>
+        <div class="game-label">Burnout Drift 3</div>
+        <div class="game-desc">Perform long, controlled drifts through a busy seaport in this 3D browser-based driving game focusing on high-speed drifting and car customization.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="basketballstars.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxKMfiklMLmio5eJsDFtmN0QYrbSjEfp3EQg&s" alt="Basketball Stars">
+        </div>
+        <div class="game-label">Basketball Stars</div>
+        <div class="game-desc">Show off your shooting and dribbling skills in competitive basketball gameplay.</div>
+      </a>
+    </div>
+
+  <div class="game-card-container">
+      <a href="rooftop.html">
+        <div class="game-card">
+          <img src="https://imgr2.ant.games/220x220/games/rooftop-snipers/s200x200-1728963551.png" alt="Rooftop Snipers">
+        </div>
+        <div class="game-label">Rooftop Snipers</div>
+        <div class="game-desc">Jump, dodge, and try to outshoot your opponent in this simple two-player rooftop duel game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="subwaysurfers.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/subwaysurfers-m180x180.png" alt="Subway Surfers">
+        </div>
+        <div class="game-label">Subway Surfers</div>
+        <div class="game-desc">Dash through subway tracks collecting coins while outrunning the inspector and his dog.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="fnaf.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1S5LiS1PD2AiLfgPnZuA95MoircAQOvCZYFunID2j-2gUvvXGwruXzpE&s=10" alt="Five Nights at Freddy's">
+        </div>
+        <div class="game-label">Five Nights at Freddy's</div>
+        <div class="game-desc">Survive the night as a security guard while haunted animatronics try to catch you.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="fnaf2.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnO6a1ubEaKlDmw0H1rTlvAK0p1PFJYMbl6A&s" alt="Five Nights at Freddy's 2">
+        </div>
+        <div class="game-label">Five Nights at Freddy's 2</div>
+        <div class="game-desc">Use cameras and masks to survive a new wave of unpredictable animatronics in this prequel.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="fnaf3.html">
+        <div class="game-card">
+          <img src="https://play-lh.googleusercontent.com/A9kng-j9BLaA2dhRGsPExmjy9E4vfG-GHefvmyywT0J67ZEPGONIsFYlIokL5EUNfiHF" alt="Five Nights at Freddy's 3">
+        </div>
+        <div class="game-label">Five Nights at Freddy's 3</div>
+        <div class="game-desc">Investigate the horrors of a haunted attraction while avoiding the terrifying Springtrap.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="fnaf4.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmJX6yMsrtGI60HasIsUf8MRwZvc_Vavkq7w&s" alt="Five Nights at Freddy's 4">
+        </div>
+        <div class="game-label">Five Nights at Freddy's 4</div>
+        <div class="game-desc">Face your fears in your bedroom as nightmarish animatronics stalk you in intense survival gameplay.</div>
+      </a>
+    </div>
+  
+    <div class="game-card-container">
+      <a href="fnafsb.html">
+        <div class="game-card">
+          <img src="https://fngames.io/cache/data/image/game/fnaf-sister-location-m200x200.jpg" alt="Five Nights at Freddy's Sister Location">
+        </div>
+        <div class="game-label">FNAF Sister Location</div>
+        <div class="game-desc">Survive a new underground facility filled with advanced animatronics and story-driven horror challenges.</div>
+      </a>
+    </div>
+  
+    <div class="game-card-container">
+      <a href="fnafucn.html">
+        <div class="game-card">
+          <img src="https://fngames.io/cache/data/image/game/fnaf-ultimate-custom-night-1-m200x200.jpg" alt="Five Nights at Freddy's Ultimate Custom Night">
+        </div>
+        <div class="game-label">FNAF Ultimate Custom Night</div>
+        <div class="game-desc">Customize your nightmare by choosing animatronics and survive endless nights in this ultimate Five Nights at Freddy’s challenge.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="undeadcorridor.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/undeadcorridor2-m180x180.png" alt="Undead Corridor">
+        </div>
+        <div class="game-label">Undead Corridor</div>
+        <div class="game-desc">Blast through hordes of zombies in this intense shooter escape experience.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="speedstars.html">
+        <div class="game-card">
+          <img src="https://speedstarsfree.io/data/image/speed-stars-free.jpg" alt="Speed Stars">
+        </div>
+        <div class="game-label">Speed Stars</div>
+        <div class="game-desc">Run like a trackstar in this entertaining simulator game where the fastest runner wins!</div>
+      </a>
+    </div>
+
+  <div class="game-card-container">
+      <a href="krunker.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk4asrF9sP1lHGMkelvTybe-TCylKJeYyuRw&s" alt="Krunker.io">
+        </div>
+        <div class="game-label">Krunker.io</div>
+        <div class="game-desc">Jump into fast-paced pixel-style FPS battles and compete against players worldwide in this action-packed browser shooter.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="ragdollplayground.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/ragdollplayground-m180x180.png" alt="Ragdoll Playground">
+        </div>
+        <div class="game-label">Ragdoll Playground</div>
+        <div class="game-desc">Play with ragdoll physics in a sandbox environment full of fun interactions.</div>
+      </a>
+    </div>
+  
+    <div class="game-card-container">
+      <a href="fireboy.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/fireboy-watergirl-1-m180x180.png" alt="Fireboy and Watergirl">
+        </div>
+        <div class="game-label">Fireboy and Watergirl</div>
+        <div class="game-desc">Control two characters with opposite abilities to solve puzzles and escape temples in this classic cooperative platformer.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="traffic-rally.html">
+        <div class="game-card">
+          <img src="https://www.drift-boss.cc/uploads/games/main/img_69152c5a4c4de.jpg" alt="Traffic Rally">
+        </div>
+        <div class="game-label">Traffic Rally</div>
+        <div class="game-desc">Drive like a boss in this awesome car simulator</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="wheeliemaster.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/wheeliemaster1-m180x180.png" alt="Wheelie Master">
+        </div>
+        <div class="game-label">Wheelie Master</div>
+        <div class="game-desc">Perform crazy wheelie stunts and race through levels to show off your balance skills.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="buzzy.html">
+        <div class="game-card">
+          <img src="https://techcrunch.com/wp-content/uploads/2014/02/flappy.jpeg" alt="Flappy Bird">
+        </div>
+        <div class="game-label">Flappy Bird</div>
+        <div class="game-desc">Tap to keep the bird airborne while navigating between pipes for a simple but addictive challenge.</div>
+      </a>
+    </div>
+  
+   <div class="game-card-container">
+      <a href="driftboss.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/drift-boss-m180x180.png" alt="Drift Boss">
+        </div>
+        <div class="game-label">Drift Boss</div>
+        <div class="game-desc">Drift around tight corners and master your car’s handling for high scores.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="snake.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFWCEHW1Kfkq-3Q6eAOgaoybxUZHkhbewYXg&s" alt="Slither.io">
+        </div>
+        <div class="game-label">Slither.io</div>
+        <div class="game-desc">Grow your snake by collecting pellets and outmaneuver other players to dominate.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="rocketleague.html">
+        <div class="game-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Rocket_League_coverart.jpg" alt="Rocket League">
+        </div>
+        <div class="game-label">Rocket League</div>
+        <div class="game-desc">Play high‑octane soccer with cars in explosive physics‑based matches.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="orbitkick.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/imgs/orbitkick3.png" alt="Orbit Kick">
+        </div>
+        <div class="game-label">Orbit Kick</div>
+        <div class="game-desc">Kick the ball through orbital obstacles and score in this unique physics puzzler.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="leveldevil.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNtacYZhjKfHx1e0XoEtWnvHTzxuSKA-QIkA&s" alt="Level Devil">
+        </div>
+        <div class="game-label">Level Devil</div>
+        <div class="game-desc">Take on devilishly tricky platform levels that challenge your timing and skill.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="stealabrainrot.html">
+        <div class="game-card">
+          <img src="https://img.utdstc.com/icon/8ae/6da/8ae6dac1dd832948535cd7b4b57817d6ef9350fcece3c3a33a6ccc94ed876f3a:200" alt="Steal a Brainrot">
+        </div>
+        <div class="game-label">Steal a Brainrot</div>
+        <div class="game-desc">Sneak, run, and outsmart enemies in this quirky arcade adventure.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="hollowknight.html">
+        <div class="game-card">
+          <img src="https://i.pinimg.com/474x/3a/63/54/3a63544cab1e6926dcb7f02c384be94d.jpg" alt="Hollow Knight">
+        </div>
+        <div class="game-label">Hollow Knight</div>
+        <div class="game-desc">Explore Hallownest and fight bugs in this epic adventure!</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="pvz.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx7rBe8ht8qukhwoK_0ebWxxkTFC4DmwzfRg&s" alt="Plants vs Zombies">
+        </div>
+        <div class="game-label">Plants vs Zombies</div>
+        <div class="game-desc">Defend your yard from waves of zombies using quirky plant defenses.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="mountainbike.html">
+        <div class="game-card">
+          <img src="https://play-lh.googleusercontent.com/kc0sG9jRqZ785YnHFYKSvfKSzf3Axxo_Kr9smGb-25lWUsgjpcCrYPaKB6QFH-ODaX0" alt="MX Offroad Mountain Bike">
+        </div>
+        <div class="game-label">MX Offroad Mountain Bike</div>
+        <div class="game-desc">Ride realistic mountain trails, perform stunts, and master tough terrain in this physics-based biking game.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="undertale.html">
+        <div class="game-card">
+          <img src="https://alternative.me/media/256/undertale-icon-1wn8j2j5k9wr7qzl-c.png" alt="Undertale">
+        </div>
+        <div class="game-label">Undertale</div>
+        <div class="game-desc">Experience a unique RPG with choice‑driven storytelling and memorable characters.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="escaperoad.html">
+        <div class="game-card">
+          <img src="https://escaperoad.org/data/image/game/escape-road-game.png" alt="Escape Road">
+        </div>
+        <div class="game-label">Escape Road</div>
+        <div class="game-desc">Race through intense obstacle-filled roads while dodging hazards and escaping at full speed in this fast-paced driving game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="escaperoad2.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/escaperoad21-m180x180.png" alt="Escape Road 2">
+        </div>
+        <div class="game-label">Escape Road 2</div>
+        <div class="game-desc">Race through intense obstacle-filled roads while dodging hazards and escaping at full speed in this fast-paced driving game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="escaperoad3.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/escaperoad3-m180x180.png" alt="Escape Road 3">
+        </div>
+        <div class="game-label">Escape Road 3</div>
+        <div class="game-desc">Race through intense obstacle-filled roads while dodging hazards and escaping at full speed in this fast-paced driving game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="escapecity.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/icon-m180x180.png" alt="Escape Road City">
+        </div>
+        <div class="game-label">Escape Road City</div>
+        <div class="game-desc">Race through intense obstacle-filled roads while dodging hazards and escaping at full speed in this fast-paced driving game.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="escape2.html">
+        <div class="game-card">
+          <img src="https://i0.wp.com/diva-magazine.com/wp-content/uploads/2025/12/escaperoadcity2.png?fit=512%2C512&ssl=1" alt="Escape Road City 2">
+        </div>
+        <div class="game-label">Escape Road City 2</div>
+        <div class="game-desc">Speed through a chaotic city, dodge traffic and obstacles, and escape the cops in this high-speed driving sequel.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="motox3m.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSFmf5s5KLI5yl_2qgbt55mubOAz5g2JVaiw&s" alt="Moto X3M">
+        </div>
+        <div class="game-label">Moto X3M</div>
+        <div class="game-desc">Drive through daring obstacles on your motorbike in this iconic flash game.</div>
+      </a>
+    </div>
+
+  <div class="game-card-container">
+      <a href="hazards.html">
+        <div class="game-card">
+          <img src="https://cdn-1.webcatalog.io/catalog/poki-house-of-hazards/poki-house-of-hazards-icon-filled-256.webp?v=1714779541602" alt="House of Hazards">
+        </div>
+        <div class="game-label">House of Hazards</div>
+        <div class="game-desc">Run, jump, and avoid traps while trying to reach the end in this simple physics-based game.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="frontwars.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvTGt9HVeRxC85P7-0HzpxB-OMjpapfTyvkg&s" alt="FrontWars.io">
+        </div>
+        <div class="game-label">FrontWars.io</div>
+        <div class="game-desc">Command your troops and battle other players in fast-paced strategic combat on dynamic battlefields in this multiplayer .io war game.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="brainrotclicker.html">
+        <div class="game-card">
+          <img src="https://play-lh.googleusercontent.com/FHpruD72oQpyI9Zl1rj5D7i8hf_hpeYNCNAwWPZ5tqIN-bZjKVqHsRj5zopYSSWVSKr693SGPl2mHTl90KYX5g=w240-h480-rw" alt="Brainrot Clicker">
+        </div>
+        <div class="game-label">Brainrot Clicker</div>
+        <div class="game-desc">Tap nonstop to earn points, unlock upgrades, and embrace pure chaotic brainrot in this fast, addictive idle clicker game..</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="baldi.html">
+        <div class="game-card">
+          <img src="https://fngames.io/cache/data/image/game/baldis-basics-1-m200x200.jpg" alt="Baldi's Basics">
+        </div>
+        <div class="game-label">Baldi's Basics</div>
+        <div class="game-desc">Explore a creepy parody schoolhouse while collecting notebooks and escaping Baldi in this unsettling horror-comedy game.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="poppyplaytime.html">
+        <div class="game-card">
+          <img src="https://fngames.io/cache/data/image/game/poppy-playtime-online-m200x200.png" alt="Poppy Playtime">
+        </div>
+        <div class="game-label">Poppy Playtime</div>
+        <div class="game-desc">Explore an abandoned toy factory, solve puzzles, and survive terrifying encounters in this atmospheric horror adventure.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="bitlife.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/bitlifegamebanner1-m180x180.png" alt="BitLife">
+        </div>
+        <div class="game-label">BitLife</div>
+        <div class="game-desc">Make choices from birth to death and shape your character’s life through wild decisions in this addictive life simulation game.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="stickman.html">
+        <div class="game-card">
+          <img src="https://www.kizgame.com/thumbs/stickman-kombat-2d_1.webp" alt="Stickman Kombat 2D">
+        </div>
+        <div class="game-label">Stickman Kombat 2D</div>
+        <div class="game-desc">Battle enemies in fast-paced 2D stickman fights using powerful combos and intense arena combat.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="fnf.html">
+        <div class="game-card">
+          <img src="https://img.utdstc.com/icon/807/216/8072161110b1f6a2990a4baeb55eaaeab761fc199d9c001c7b6623f4cf8c6eb7:200" alt="Friday Night Funkin'">
+        </div>
+        <div class="game-label">Friday Night Funkin'</div>
+        <div class="game-desc">Battle through rhythmic rap duels and hit every note to impress your "Girlfriend" in this fast-paced music game.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="madalin.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1cY0n9-pE92iu3v-yYhZNWf4PipH4LgJs4g&s" alt="Madalin Stunt Cars 2">
+        </div>
+        <div class="game-label">Madalin Stunt Cars 2</div>
+        <div class="game-desc">Drive fast and perform stunts across challenging tracks in this simple but fun car game.</div>
+      </a>
+    </div>
+  
+   <div class="game-card-container">
+      <a href="survivalrace.html">
+        <div class="game-card">
+          <img src="https://survival-race.io/data/image/survival-race.jpg" alt="Survival Race">
+        </div>
+        <div class="game-label">Survival Race</div>
+        <div class="game-desc">Race through collapsing tracks and deadly obstacles in this intense 3D survival driving challenge where only the last driver standing wins.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="timeshooter3.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQubOUF-c4mFH71CTUMhkl83Gz9ZlzXkR8j3Q&s" alt="Time Shooter 3: SWAT">
+        </div>
+        <div class="game-label">Time Shooter 3: SWAT</div>
+        <div class="game-desc">Freeze time and shoot down terrorists in this fast-paced, action packed SWAT shooter.</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="deeradventure.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ADBsm-2aSRbZ0_JV4AIYn8vPiJ20ZJySvA&s" alt="Deer Adventure">
+        </div>
+        <div class="game-label">Deer Adventure</div>
+        <div class="game-desc">Steal cars, fight pedestrians, and wreak havoc on the city in this humorous, casual game.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="bucket.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy-jDG0sBG9imU-owahuOKAZTeigPd7jVgxA&s" alt="Bucket Smash">
+        </div>
+        <div class="game-label">Bucket Smash</div>
+        <div class="game-desc">Saw through brick walls in this fun game.</div>
+      </a>
+    </div>
+
+  <div class="game-card-container">
+      <a href="kickthebuddy.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJDJEQlHqcqKTr_LV4vluRwVPFcpOu_HuOxQ&s" alt="Kick the Buddy">
+        </div>
+        <div class="game-label">Kick the Buddy</div>
+        <div class="game-desc">Slap, shoot, explode, and do much more to Buddy in this fun, stress relieving game.</div>
+      </a>
+    </div>
+    
+    <div class="game-card-container">
+      <a href="carchaos.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/carchaos3-m180x180.png" alt="Car Chaos">
+        </div>
+        <div class="game-label">Car Chaos</div>
+        <div class="game-desc">Crush and destroy cars against your friends or a bot in this thrilling car game where first to 5 wins!</div>
+      </a>
+    </div>
+    
+     <div class="game-card-container">
+      <a href="bottlehop.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz6tesAsVN9QF2cWW7HAKNW1cNIbb6zz29xA&s" alt="Bottle Hop">
+        </div>
+        <div class="game-label">Bottle Hop</div>
+        <div class="game-desc">Flip your bottle for as long as possible against obstacles in this game where you strive for the highest score!</div>
+      </a>
+    </div>
+    
+    <div class="game-card-container">
+      <a href="infinitecraft.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfC-VChGvWpMT87YqZuhlFBYGb1F7WJcWxTw&s" alt="Infinite Craft">
+        </div>
+        <div class="game-label">Infinite Craft</div>
+        <div class="game-desc">Mix anything and come up with wild creations in this fun sandbox game.</div>
+      </a>
+    </div>
+    
+    <div class="game-card-container">
+      <a href="amongus.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJwI44RIxtDJZJKG3YSrDga-TGrSDJReO8eQ&s" alt="Among Us">
+        </div>
+        <div class="game-label">Among Us (MULTIPLAYER)</div>
+        <div class="game-desc">Go up against your friends in this dark, thrilling murder-mystery where the impostors target crewmates.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="epstein.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXhD4DBFveThrxagQklqI95_iwkBn08MJLEw&s alt="Five Nights at Epstein's">
+        </div>
+        <div class="game-label">Five Nights at Epstein's</div>
+        <div class="game-desc">Monitor the cameras in Jeffrey Epstein's mansion, but make sure big Stein doesn't catch you!</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="trump.html">
+        <div class="game-card">
+          <img src="https://m.gjcdn.net/fireside-post-image/900/25912644-nf45pwpe-v4.webp" alt="Five Nights at Trump's">
+        </div>
+        <div class="game-label">Five Nights at Trump's</div>
+        <div class="game-desc">Survive five nights with Trump</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="tsunami.html">
+        <div class="game-card">
+          <img src="https://play-lh.googleusercontent.com/xs2kAV6dUAnQtYfaY6qmwhAd9LqRI1LpHPiG8bPAD668VLPq4EMUzGlFlM_h4FvQfbnH5PoQ2APMxrMvn9aYMQ=w240-h480-rw" alt="Escape Tsunami for Brainrots">
+        </div>
+        <div class="game-label">Escape Tsunami for Brainrots</div>
+        <div class="game-desc">Run and gather brainrots while surviving tsunamis in this fun Roblox-inspired game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="route66.html">
+        <div class="game-card">
+          <img src="https://escaperoad.io/data/image/game/route-66-russian-traffic-eroad1.png" alt="Route 66 Russian Traffic">
+        </div>
+        <div class="game-label">Route 66: Russian Traffic</div>
+        <div class="game-desc">Become a true Ruski and drive your Lada down Route 66 in this casual game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="rust.html">
+        <div class="game-card">
+          <img src="https://cdn2.steamgriddb.com/icon/1098f40d613dcadb0486a71293cb6e31.ico" alt="RUST">
+        </div>
+        <div class="game-label">RUST</div>
+        <div class="game-desc">Survive as long as possible in the wilderness in this brutal, open-world game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="kartbros.html">
+        <div class="game-card">
+          <img src="https://ozogames.com/uploads/2025/09/kart-bros-image.webp" alt="KartBros.io">
+        </div>
+        <div class="game-label">KartBros.io</div>
+        <div class="game-desc">Race against your friends in this thrilling Mario Kart inspired game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="bikextreme.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/bikextreme11-m180x180.png" alt="Bike Xtreme">
+        </div>
+        <div class="game-label">Bike Xtreme</div>
+        <div class="game-desc">Do awesome tricks on a BMX in this fun biking game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="paper.html">
+        <div class="game-card">
+          <img src="https://i.pinimg.com/736x/33/48/8a/33488a03a8ec1fb8f79d4800e5d17dcf.jpg" alt="Paper.io">
+        </div>
+        <div class="game-label">Paper.io</div>
+        <div class="game-desc">Claim as much of the map as you can in this competitive game where the first to 100% wins!</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="1v1lol.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/1v1lol-m180x180.png" alt="1v1.LOL">
+        </div>
+        <div class="game-label">1v1.LOL</div>
+        <div class="game-desc">1v1 your friends or hop into a 30 player battle royale in this Fortnite inspired shooter.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="bloxd.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH0HYOFolFm9wnLIpuJ7z-6JVLI_Q4b6wcAA&s" alt="Bloxd.io">
+        </div>
+        <div class="game-label">Bloxd.io</div>
+        <div class="game-desc">Play hundreds of exciting minigames in this Roblox style game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="gta.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/imgs/dudetheftauto3.png" alt="Dude Theft Auto">
+        </div>
+        <div class="game-label">Dude Theft Auto</div>
+        <div class="game-desc">Shoot pedestrians, steal cars, and become a crime boss in this GTA-style game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="wackyflip.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/imgs/wackyflip.png" alt="Wacky Flip">
+        </div>
+        <div class="game-label">Wacky Flip</div>
+        <div class="game-desc">Do awesome flips in this wacky, physics based game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="ragdollhit.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9_DKyI66DXR4oYE2kprSl5QEWKjDb288NuQ&s" alt="Ragdoll Hit">
+        </div>
+        <div class="game-label">Ragdoll Hit</div>
+        <div class="game-desc">Control a warrior stickman in this goofy physics-based fighting game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="citybrawl.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8_VKrfEEoVLlSrVrl_Iny84UI94P3CpGLaA&s" alt="City Brawl">
+        </div>
+        <div class="game-label">City Brawl</div>
+        <div class="game-desc">Pick random street fights with people in this high-quality fighting game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="badparenting.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFwVDlH9IOuBDDu1bf2Jd7AIh9KT0LJMcjIQ&s" alt="Bad Parenting">
+        </div>
+        <div class="game-label">Bad Parenting</div>
+        <div class="game-desc">Escape from your abusive parents in this psychological horror game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="bounceup.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/imgs/bounceup3.png" alt="Bounce Up">
+        </div>
+        <div class="game-label">Bounce Up</div>
+        <div class="game-desc">Be a ball and bounce for as long as you can in this endless game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="skipit.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/skipit3-m180x180.png" alt="Skip It">
+        </div>
+        <div class="game-label">Skip It</div>
+        <div class="game-desc">Be a rock and skip for as long as you can in this endless game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="deadstrike.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/deadstrike-m180x180.png" alt="Dead Strike">
+        </div>
+        <div class="game-label">Dead Strike</div>
+        <div class="game-desc">Kill zombies and survive the apocalypse in this high-action shooter game.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="cowboy.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/cowboysafari2-m180x180.png" alt="Cowboy Safari">
+        </div>
+        <div class="game-label">Cowboy Safari</div>
+        <div class="game-desc">Tame and ride farm animals in this fun game.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="snowroad.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/snowroad4-m180x180.png" alt="Snow Road">
+        </div>
+        <div class="game-label">Snow Road</div>
+        <div class="game-desc">Become a professional snowboarder and bomb hills in this awesome stunt game.</div>
+      </a>
+     </div>
+
+    <div class="game-card-container">
+      <a href="sorrybob.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/sorrybob-m180x180.png" alt="Sorry Bob">
+        </div>
+        <div class="game-label">Sorry Bob</div>
+        <div class="game-desc">Become a surgeon and don't kill your patients in this game with obnoxious controls.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="stickmanhook.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/stickmanhook-m180x180.jpg" alt="Stickman Hook">
+        </div>
+        <div class="game-label">Stickman Hook</div>
+        <div class="game-desc">Swing through intense levels in this fun, one-button game.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="escapejump.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/escapejump1-m180x180.png" alt="Escape Jump">
+        </div>
+        <div class="game-label">Escape Jump</div>
+        <div class="game-desc">Use your parkour skills to escape from the police in this addictive browser game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="jetski.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/flippyrace-m180x180.png" alt="Jetski Race">
+        </div>
+        <div class="game-label">Jetski Race</div>
+        <div class="game-desc">Ride your jetski through rough waters and beat your opponents in this fast-paced racing game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="speedshooter.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/speedshooter-m180x180.png" alt="Speed Shooter">
+        </div>
+        <div class="game-label">Speed Shooter</div>
+        <div class="game-desc">Use your quick reaction time to eliminate enemies in this fun shooter game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="power.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/powersurfer1-m180x180.png" alt="Power Surfer">
+        </div>
+        <div class="game-label">Power Surfer</div>
+        <div class="game-desc">Zip through the streets and avoid obstacles on your hoverboard in this futuristic driving game</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="madness.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-lqZGjyy_KkOkib3TDw_n8lVdLnTjCZZgyQ&s" alt="Madness Hole">
+        </div>
+        <div class="game-label">Madness Hole</div>
+        <div class="game-desc">Become a massive hole and eat everything in sight in this fun casual game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="swing.html">
+        <div class="game-card">
+          <img src="https://play-lh.googleusercontent.com/ikHZSSLzci3WXTBR1Vie3mIQlaqdd4iRU40Z7dcd-du11d4JYjbn1Dfog6s_In9awty77uUw4iUbPhd7gSmsCQ=w240-h480-rw" alt="Swing Obby for Brainrots">
+        </div>
+        <div class="game-label">Swing Obby for Brainrots</div>
+        <div class="game-desc">Swing through challenging obstacles and gather brainrots in this obby game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="block.html">
+        <div class="game-card">
+          <img src="https://play-lh.googleusercontent.com/AispxH607bMtY8_rTPdhEwqd-vo0falmj1B3G5P4AQ346GL_CjA4I2Iy4S1tQrdmfNI" alt="Block Breaker">
+        </div>
+        <div class="game-label">Block Breaker</div>
+        <div class="game-desc">Smash bricks with your balls in this fun ball game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="voxiom.html">
+        <div class="game-card">
+          <img src="https://cdn-1.webcatalog.io/catalog/voxiom-io/voxiom-io-icon-filled-256.png?v=1714779928713" alt="Voxiom.io">
+        </div>
+        <div class="game-label">Voxiom.io</div>
+        <div class="game-desc">Eliminate other players in this fun first person shooter.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="ann.html">
+        <div class="game-card">
+          <img src="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/1511270/42056654dfd0f0b99a63b24fff6f8062403caacd.jpg" alt="Ann">
+        </div>
+        <div class="game-label">Ann</div>
+        <div class="game-desc">Escape your school in this 2D JRPG game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="vex3.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/vex3v-m180x180.jpg" alt="Vex 3">
+        </div>
+        <div class="game-label">Vex 3</div>
+        <div class="game-desc">Jump through hard levels in this classic parkour game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="narrowone.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/narrow-one-m180x180.png" alt="Narrow One">
+        </div>
+        <div class="game-label">Narrow One</div>
+        <div class="game-desc">Kill other players with your bow and arrow in this fun shooter game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="ballorbit.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/ballorbit2-m180x180.png" alt="Ball Orbit">
+        </div>
+        <div class="game-label">Ball Orbit</div>
+        <div class="game-desc">Launch baseballs out of a cannon in this fun sports game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="blocky.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/512x512-logo-m180x180.png" alt="Blocky Overtake X">
+        </div>
+        <div class="game-label">Blocky Overtake X</div>
+        <div class="game-desc">Speed through traffic in your blocky car in this fun driving game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="tung.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/tungsahurclicker2-m180x180.png" alt="Tung Sahur Clicker">
+        </div>
+        <div class="game-label">Tung Sahur Clicker</div>
+        <div class="game-desc">Click on Triple T with lightning speed in this fun clicker game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="backrooms.html">
+        <div class="game-card">
+          <img src="https://play-lh.googleusercontent.com/363qcJv7p0F1lH5n_2WIdEhf45znbtmp-IyOVclu9zN9mFUBjQKO6rJg1q6m0qxjBg" alt="Backrooms">
+        </div>
+        <div class="game-label">Backrooms</div>
+        <div class="game-desc">Escape the mysterious backrooms and hide from entities in this horror game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="happywheels.html">
+        <div class="game-card">
+          <img src="https://horrorgames.io/cache/data/image/game/happy-wheels-f180x180.png" alt="Happy Wheels">
+        </div>
+        <div class="game-label">Happy Wheels</div>
+        <div class="game-desc">Ride through levels on goofy vehicles in this famous flash game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="disasters.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwKgUPC9CWgAj1YS89D16oQIcqV7zTBtNAnw&s" alt="Survive the Disasters">
+        </div>
+        <div class="game-label">Survive the Disasters</div>
+        <div class="game-desc">Survive various natural disasters for as long as possible in this Roblox-inspired game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="mario.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlp__nVZtrNUZoa3IXS2LL6hB0AZmOZG75ZQ&s" alt="Super Mario Bros">
+        </div>
+        <div class="game-label">Super Mario Bros</div>
+        <div class="game-desc">Navigate through treacherous levels in this retro platformer game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="fishit.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/fishitonline3-m180x180.png" alt="Fish It">
+        </div>
+        <div class="game-label">Fish It</div>
+        <div class="game-desc">Use your fishing rod to catch big fish in this multiplayer game inspired by Fisch (Roblox)</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="garden.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8GXtZ_K1eprq5E8DjEd8dL8f3esE0CCqaKQ&s" alt="Grow a Garden">
+        </div>
+        <div class="game-label">Grow a Garden</div>
+        <div class="game-desc">Create a beautiful garden with tons of exotic plants in this fun game.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="tennis.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLGwMiQm90EDIrIdKy4EjzFKvhHI6lQXO_LA&s" alt="Arcade Tennis">
+        </div>
+        <div class="game-label">Arcade Tennis</div>
+        <div class="game-desc">Play a fun match of tennis against your friends in this simple simulator.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="wrestlebros.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRohVdiEVDYy6BiVk8G-_KtqrjBqbRyPJ8sbA&s" alt="Wrestle Bros">
+        </div>
+        <div class="game-label">Wrestle Bros</div>
+        <div class="game-desc">Pick your favourite wrestler and hop into the ring with your friends in this fun fighting game.</div>
+      </a>
+    </div>
+    
+     <div class="game-card-container">
+      <a href="zombiederby.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6A7glULxLZNDxCiyJoG3OXbP6fo-IuayUA&s" alt="Zombie Derby: Blocky Roads">
+        </div>
+        <div class="game-label">Zombie Derby: Blocky Roads</div>
+        <div class="game-desc">Smash through hordes of zombies in your vehicle in this fun, exhilarating game!</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="wackysteps.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJkyD-FglWELuzN3VOfZFUZcpEbnqpft0bIw&s" alt="Wacky Steps">
+        </div>
+        <div class="game-label">Wacky Steps</div>
+        <div class="game-desc">Use your goofy noodle legs to walk down the sidewalk and avoid cracks in this endless physics game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="crazytaxi.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/crazytaxi3-m180x180.png" alt="Crazy Taxi">
+        </div>
+        <div class="game-label">Crazy Taxi</div>
+        <div class="game-desc">Drive your taxi through busy streets and pick up passengers in this fun driving game.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="crossy.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/crossyroad1-m180x180.png" alt="Crossy Road">
+        </div>
+        <div class="game-label">Crossy Road</div>
+        <div class="game-desc">Cross the street and avoid obstacles as a chicken in this iconic game.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="cryzen.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC3mfRB2LI-n4eo-CMBHdlQ-CRwNVa14CFrA&s" alt="Cryzen.io">
+        </div>
+        <div class="game-label">Cryzen.io</div>
+        <div class="game-desc">Eliminate enemies in this multiplayer, CS:GO inspired game. (Requested by @artin.s44)</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="spacewaves.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlvpINlHVXkHS4cpT7NznJUU6LA6B1WsDhkw&s" alt="Space Waves">
+        </div>
+        <div class="game-label">Space Waves</div>
+        <div class="game-desc">Use your wave to navigate through increasingly difficult levels in this Geometry Dash style game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="escapeanimals.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/escapeanimals-m180x180.png" alt="Escape Animals">
+        </div>
+        <div class="game-label">Escape Animals</div>
+        <div class="game-desc">Collect powerful animals and survive rising lava in this fun game inspired by Escape Lava for Brainrots.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="bloxorz.html">
+        <div class="game-card">
+          <img src="https://assets.bitent.com/images/games/thumbs/ik/217x217/bloxorz_big_658334162ac84.png" alt="Bloxorz">
+        </div>
+        <div class="game-label">Bloxorz</div>
+        <div class="game-desc">Navigate your block through tight holes in this classic puzzle game.</div>
+      </a>
+    </div>
+
+      <div class="game-card-container">
+      <a href="cattle.html">
+        <div class="game-card">
+          <img src="https://1games.io/data/image/game/crazy-cattle-3d/banner/crazy-cattle-3d-1.jpg" alt="Crazy Cattle 3D">
+        </div>
+        <div class="game-label">Crazy Cattle 3D</div>
+        <div class="game-desc">Become the top cow and beat your opponents in this funny battle royale game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="googoo.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/googoogagaclicker3-m180x180.png" alt="Goo Goo Gaga Clicker">
+        </div>
+        <div class="game-label">Goo Goo Gaga Clicker</div>
+        <div class="game-desc">Click Goo Goo Gaga as much as you can in this hilarious idle clicker game.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="baseballbros.html">
+        <div class="game-card">
+          <img src="https://golforbitgame.com/wp-content/uploads/2026/01/Baseball-Bros.webp" alt="Baseball Bros">
+        </div>
+        <div class="game-label">Baseball Bros</div>
+        <div class="game-desc">Play like a professional baseball star in this fun sports game! (Requested by @24k_tyree)</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="2v2.html">
+        <div class="game-card">
+          <img src="https://kizgame.com/thumbs/2v2-io_2.webp" alt="2v2.io">
+        </div>
+        <div class="game-label">2v2.io</div>
+        <div class="game-desc">Shoot and build to survive until the end in this Fortnite-inspired shooter game! (Requested by @artin.s44)</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="officefury.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/officefurygame-m180x180.png" alt="Office Fury">
+        </div>
+        <div class="game-label">Office Fury</div>
+        <div class="game-desc">Play as an office worker gone mad and destroy everything around you in this funny game.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="tapdrift.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/tapdrift-m180x180.png" alt="Tap Drift">
+        </div>
+        <div class="game-label">Tap Drift</div>
+        <div class="game-desc">Drive like a pro and swerve around corners with blazing speed in this exhilarating driving game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="escapedrive.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYz66dIjhLXOl0ES_UYkHM1lhS5EpVFGfjZA&s" alt="Escape Drive">
+        </div>
+        <div class="game-label">Escape Drive</div>
+        <div class="game-desc">Control an armored car and blow up people chasing you in this crazy action game.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="horrornun.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/horrornun3-m180x180.png" alt="Horror Nun">
+        </div>
+        <div class="game-label">Horror Nun</div>
+        <div class="game-desc">Escape a school of secrets and survive Sister Madeline's evil plans in this horror game.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="furychase.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/furychase-m180x180.png" alt="Fury Chase">
+        </div>
+        <div class="game-label">Fury Chase</div>
+        <div class="game-desc">Play as a getaway driver and pick up robbers in this extremely fun driving game.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="granny.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSioeHQtpq_2E8BSBwfbT0AGwp1ORFCho8iZQ&s" alt="Granny">
+        </div>
+        <div class="game-label">Granny</div>
+        <div class="game-desc">Escape Granny's house with the tools at your disposal in this horror game that keeps you on edge. (Requested by @5starrjosiah.3)</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="deltarune.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa3KT5BHi2Rk-DasTNi-1LzuyzkXdGf4jp5A&s" alt="Deltarune">
+        </div>
+        <div class="game-label">Deltarune</div>
+        <div class="game-desc">Save your classmate from a dark world in this episodic, top-down role-playing game developed by Toby Fox.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="codzombies.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZUcAZfsc7FLPfndoB7KLMCWLdoNzIIRzPQw&s" alt="Call of Duty: Zombies">
+        </div>
+        <div class="game-label">Call of Duty: Zombies</div>
+        <div class="game-desc">Eliminate zombies and survive waves in this popular cooperative, first-person shooter survival mode within the Call of Duty franchise.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="astrotycoon.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/astrotycoon3-m180x180.png" alt="Astro Tycoon">
+        </div>
+        <div class="game-label">Astro Tycoon</div>
+        <div class="game-desc">Travel the planets for fossils and resources and build your space mining tycoon in this space-themed idle game.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="stickhero.html">
+        <div class="game-card">
+          <img src="https://azgames.io/upload/cache/upload/imgs/stickherorpg2-m180x180.png" alt="Stick Hero RPG">
+        </div>
+        <div class="game-label">Stick Hero RPG</div>
+        <div class="game-desc">Defeat waves of monsters, zombies, bosses, and other enemies across dungeons in this engaging action survival stickman shooter game. </div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="drifthunters.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqkwL-v4rxX5UvE-r1azeAKAHS93Ay9ZyLow&s" alt="Drift Hunters">
+        </div>
+        <div class="game-label">Drift Hunters</div>
+        <div class="game-desc">Play this thrilling 3D drifting simulator that redefines the racing genre with its masterful blend of realistic physics, deep car customization, and adrenaline-fueled track action.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="bowmasters.html">
+        <div class="game-card">
+          <img src="https://cdn.now.gg/apps-content/com.playgendary.bowmasters/icon/bowmasters.png" alt="Bowmasters">
+        </div>
+        <div class="game-label">Bowmasters</div>
+        <div class="game-desc">Be a professional archer in this online 2D action shooting game where precision, creativity, and timing determine who wins the duel.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="jetpackjoyride.html">
+        <div class="game-card">
+          <img src="https://play-lh.googleusercontent.com/3e_iyy1dolGSHqKFmwsao8SiMmqOtCuwD4CyKToLHoK34cchcH5PlG2VhOoE2_j-7FMH" alt="Jetpack Joyride">
+        </div>
+        <div class="game-label">Jetpack Joyride</div>
+        <div class="game-desc">Play this legendary endless runner arcade game where you blast through a high-tech laboratory packed with lasers, missiles, scientists, and experimental vehicles.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="nubby.html">
+        <div class="game-card">
+          <img src="https://img.itch.zone/aW1nLzE0NjUzNDI2LnBuZw==/original/3hc0DQ.png" alt="Nubby's Number Factory">
+        </div>
+        <div class="game-label">Nubby's Number Factory</div>
+        <div class="game-desc">Launch Nubby down a pegboard to win in this plinko-style roguelike where you work at a number factory.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="totm.html">
+        <div class="game-card">
+          <img src="https://play-lh.googleusercontent.com/ATGr-U4JBK2VjFzKGK9eMMkrDxJaazadOUoz_7Yl0U5NrWSFcFUzEtNurWXYzVWc8uOO=w240-h480-rw" alt="Tomb of The Mask">
+        </div>
+        <div class="game-label">Tomb of The Mask</div>
+        <div class="game-desc">Play this fast-paced, vertical, retro-style arcade game where you navigate dangerous mazes, collecting coins and dots while avoiding traps and enemies. </div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="papaspizzeria.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGe5GU_dm8EFg80cJzqRuqHNKg50_g0RwZyQ&s" alt="Papa's Pizzeria">
+        </div>
+        <div class="game-label">Papa's Pizzeria</div>
+        <div class="game-desc">Play as Roy in this iconic, fast-paced time-management game where you manage a pizza parlor for Papa Louie</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="papasburgeria.html">
+        <div class="game-card">
+          <img src="https://play-lh.googleusercontent.com/rHJuY78XSJrhbaW39aYNhViggnzCgR5Zu-xfIx7Sga0Y3Tv3iIuGIIgvEMqfI5Kn" alt="Papa's Burgeria">
+        </div>
+        <div class="game-label">Papa's Burgeria</div>
+        <div class="game-desc">Play this popular, fast-paced time-management simulation game where you manage a burger restaurant for Papa Louie</div>
+      </a>
+    </div>
+
+      <div class="game-card-container">
+      <a href="papasfreezeria.html">
+        <div class="game-card">
+          <img src="https://i.pinimg.com/474x/36/fc/09/36fc09b5fba75a16c7a640c064553b74.jpg" alt="Papa's Freezeria">
+        </div>
+        <div class="game-label">Papa's Freezeria</div>
+        <div class="game-desc">Play this popular, fast-paced time-management simulation game where you manage a milkshake stand for Papa Louie</div>
+      </a>
+    </div>
+    
+    <div class="game-card-container">
+      <a href="polytrack.html">
+        <div class="game-card">
+          <img src="https://www.kizgame.com/thumbs/polytrack_small.webp" alt="PolyTrack">
+        </div>
+        <div class="game-label">PolyTrack</div>
+        <div class="game-desc">Rip through courses at high speeds in this fast-paced, low-poly racing game created by Kodub, heavily inspired by TrackMania.</div>
+      </a>
+    </div>
+
+      <div class="game-card-container">
+      <a href="bendy.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1VIgmKB77SSiPdhVOBVQLsQFahEipHqJdBQ&s" alt="Bendy and the Ink Machine">
+        </div>
+        <div class="game-label">Bendy and the Ink Machine</div>
+        <div class="game-desc">Play as Henry Stein and escape the Ink Demon in this first-person episodic survival horror game with a unique 1930s "rubber hose" cartoon art style</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="classof09.html">
+        <div class="game-card">
+          <img src="https://harshulmoon.github.io/resources/classof09.jpg" alt="Class of 09">
+        </div>
+        <div class="game-label">Class of 09</div>
+        <div class="game-desc">Play this voice-acted, dark comedy visual novel set in the late 2000s, where players control Nicole, a manipulative and nihilistic 16-year-old navigating high school.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="flipside.html">
+        <div class="game-card">
+          <img src="https://i1.sndcdn.com/artworks-dKjeUAPuNyyYFSwg-FzZALw-t500x500.jpg" alt="Class of 09: The FlipSide">
+        </div>
+        <div class="game-label">Class of 09: The Flipside</div>
+        <div class="game-desc">Play the final chapter of the cult-hit "anti-visual novel" series shifts the spotlight to Jecka, Nicole's cynical best friend, as she navigates the chaos of high school and graduation in 2009.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="adventurecapitalist.html">
+        <div class="game-card">
+          <img src="https://harshulmoon.github.io/resources/adventurecapitalist.jpg" alt="AdVenture Capitalist">
+        </div>
+        <div class="game-label">AdVenture Capitalist</div>
+        <div class="game-desc">Play this popular free-to-play idle clicker game where players start with a simple lemonade stand and build a massive, multinational conglomerate.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="earntodie.html">
+        <div class="game-card">
+          <img src="https://harshulmoon.github.io/resources/earntodie.webp" alt="Earn to Die">
+        </div>
+        <div class="game-label">Earn to Die</div>
+        <div class="game-desc">Play this 2D side-scrolling action-driving game where players navigate a car through a zombie apocalypse to reach a rescue helicopter.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="ultrakill.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgQm6bPuU6msPMoyLktJBI2FZ2speRAz-fUw&s" alt="Ultrakill">
+        </div>
+        <div class="game-label">ULTRAKILL</div>
+        <div class="game-desc">ULTRAKILL is a fast-paced, "boomer-style" retro FPS that blends intense movement with character action mechanics, where machines fuel themselves with blood by destroying demons in Hell.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="catchaos.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwR_O9uvtBddk8ARf8Pt02JbaoXLYJvuY4Cw&s" alt="Cat Chaos Simulator">
+        </div>
+        <div class="game-label">Cat Chaos Simulator</div>
+        <div class="game-desc">Play this fun physics based game where you play as a mischievous cat (named Archie) causing chaos in "Granny's house.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="repo.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7erpTVvLl3jcjJOcvizpDTMAPPKyLGaaLIA&s" alt="R.E.P.O">
+        </div>
+        <div class="game-label">R.E.P.O</div>
+        <div class="game-desc">R.E.P.O. is a 1-6 player cooperative physics-based horror game, often compared to Lethal Company, where players act as "Semibots" collecting valuables from dangerous, abandoned locations to pay off debt.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="omori.html">
+        <div class="game-card">
+          <img src="https://harshulmoon.github.io/resources/omori.webp" alt="OMORI">
+        </div>
+        <div class="game-label">OMORI</div>
+        <div class="game-desc">Omori is a psychological horror RPG about a teenage boy named Sunny who battles deep-seated trauma, depression, and repressed memories.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="halflife.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYTkutTlPhZLGwEM7UWresO7pGk7pWRSKYRQ&s" alt="Half Life">
+        </div>
+        <div class="game-label">Half Life</div>
+        <div class="game-desc">Half-Life is a seminal 1998 first-person shooter (FPS) from Valve that follows Dr. Gordon Freeman, a theoretical physicist attempting to survive a resonance cascade at the Black Mesa Research Facility. </div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="blockblast.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnCvxgSe_AbjLSGL9vZl7zHN-fGj-uGcbsKQ&s" alt="Block Blast">
+        </div>
+        <div class="game-label">Block Blast</div>
+        <div class="game-desc">Block Blast is a popular, free-to-play mobile puzzle game combining Tetris-style block placement with daily challenges and an endless, relaxing gameplay mode.</div>
+      </a>
+    </div>
+
+     <div class="game-card-container">
+      <a href="kour.html">
+        <div class="game-card">
+          <img src="https://cdn.now.gg/apps-content/51869/icon/kour-io.png" alt="Kour.io">
+        </div>
+        <div class="game-label">Kour.io</div>
+        <div class="game-desc">Kour.io is a fast-paced, 3D multiplayer browser-based first-person shooter (FPS) that focuses on movement-heavy, blocky-style combat across multiple maps.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="stardew.html">
+        <div class="game-card">
+          <img src="https://static.wikia.nocookie.net/nintendo/images/b/b7/Stardew_Valley_cover_art.png/revision/latest?cb=20190129210512&path-prefix=en" alt="Stardew Valley">
+        </div>
+        <div class="game-label">Stardew Valley</div>
+        <div class="game-desc">Stardew Valley is a popular 2016 open-ended country-life RPG and farming simulation game developed by Eric "ConcernedApe" Barone.</div>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- OTHER TOOLS CATEGORY-->
+<div class="category-section">
+  <h2 class="category-header">Other Tools</h2>
+  <div class="games-grid" id="tools-grid">
+    <div class="game-card-container">
+      <a href="chatgpt.html">
+        <div class="game-card">
+          <img src="https://play-lh.googleusercontent.com/lmG9HlI0awHie0cyBieWXeNjpyXvHPwDBb8MNOVIyp0P8VEh95AiBHtUZSDVR3HLe3A=w240-h480-rw" alt="ChatGPT">
+        </div>
+        <div class="game-label">ChatGPT</div>
+        <div class="game-desc">The incredibly powerful AI chatbot.</div>
+      </a>
+    </div>
+    
+    <div class="game-card-container">
+      <a href="spotify.html">
+        <div class="game-card">
+          <img src="https://play-lh.googleusercontent.com/7ghCqs4kKYrQpTECddnejlSeAXgpdiiKlIghuDR869MpF5msXdPsd3gqjC6lstD_NfJkmP0LAUJTty7UACcrLw=w240-h480-rw" alt="Spotify">
+        </div>
+        <div class="game-label">Spotify Premium</div>
+        <div class="game-desc">The online music streaming services - no ads for entirely free!</div>
+      </a>
+    </div>
+  
+  <div class="game-card-container">
+      <a href="calculator.html">
+        <div class="game-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Calculator_%28iOS_26%29_app_icon.png" alt="Calculator">
+        </div>
+        <div class="game-label">Calculator</div>
+        <div class="game-desc">Uhhmmm... it's a calculator!</div>
+      </a>
+    </div>
+
+  <div class="game-card-container">
+      <a href="netflix.html">
+        <div class="game-card">
+          <img src="https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI" alt="Netflix">
+        </div>
+        <div class="game-label">Netflix</div>
+        <div class="game-desc">Watch any old/new movies, TV shows, and anime for free!</div>
+      </a>
+  </div>
+
+     <div class="game-card-container">
+      <a href="desmos.html">
+        <div class="game-card">
+          <img src="https://cdn-1.webcatalog.io/catalog/desmos-calculator/desmos-calculator-icon-filled-256.png?v=1773621859361" alt="Desmos">
+        </div>
+        <div class="game-label">Desmos</div>
+        <div class="game-desc">An incredibly versatile online graphing calculator.</div>
+      </a>
+  </div>
+
+    <div class="game-card-container">
+      <a href="soundboard.html">
+        <div class="game-card">
+          <img src="https://play-lh.googleusercontent.com/6iVtX7ThrMl1trDPAsbqxF7ft4JMKURfRCus7zKi1wqGQP4MBYS8GURBPqXAmlMtMKg" alt="Soundboard (MyInstants)">
+        </div>
+        <div class="game-label">Soundboard (MyInstants)</div>
+        <div class="game-desc">Play funny sounds and famous meme songs with this tool</div>
+      </a>
+  </div>
+
+     <div class="game-card-container">
+      <a href="py.html">
+        <div class="game-card">
+          <img src="https://cdn-icons-png.flaticon.com/256/11797/11797343.png" alt="Search Py">
+        </div>
+        <div class="game-label">Google (UNRESTRICTED)</div>
+        <div class="game-desc">Search anything you want on this unrestricted version of Google.</div>
+      </a>
+  </div>
+
+    <div class="game-card-container">
+      <a href="typing.html">
+        <div class="game-card">
+          <img src="https://avatars.githubusercontent.com/u/104658077?s=280&v=4" alt="Monkeytype">
+        </div>
+        <div class="game-label">MonkeyType</div>
+        <div class="game-desc">Use your nimble fingers to type at lightning speeds in this fun test of agility.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="macos.html">
+        <div class="game-card">
+          <img src="https://substackcdn.com/image/fetch/$s_!G1lk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8ed3d547-94ff-48e1-9f20-8c14a7030a02_2000x2000.jpeg" alt="Mac OS">
+        </div>
+        <div class="game-label">Mac OS</div>
+        <div class="game-desc">Run Mac OS in your browser.</div>
+      </a>
+    </div>
+
+    <div class="game-card-container">
+      <a href="sketchpad.html">
+        <div class="game-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo7LArYpexX7TtyhxyFNFOHsNQ2oaRZCq1-w&s" alt="Sketchpad">
+        </div>
+        <div class="game-label">Sketchpad</div>
+        <div class="game-desc">A fun online tool to draw pictures, write notes, or just have fun!</div>
+      </a>
+    </div>
+    
+    
+  </div>
+</div>
+
+  <div class="socials-footer">
+  <a href="https://www.reddit.com/r/homeworkplanet/" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png" alt="Reddit">
+  </a>
+  <a href="https://www.instagram.com/homework.planet/" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+  </a>
+  <a href="https://www.tiktok.com/@homeworkplanet" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/3046/3046123.png" alt="TikTok">
+  </a>
+</div>
+
+  </div>
+</div>
+
+    <script>
+    function searchGames() {
+      const input = document.getElementById("gameSearch").value.toLowerCase();
+      const games = document.querySelectorAll(".game-card-container");
+      games.forEach(game => {
+        const text = game.innerText.toLowerCase();
+        game.style.display = text.includes(input) ? "" : "none";
+      });
+    }
+
+    // ── Dynamic ad loading ────────────────────────────────────────────────
+    function loadAds() {
+      const script1 = document.createElement('script');
+      script1.src = 'https://3nbf4.com/act/files/tag.min.js?z=10489665';
+      script1.setAttribute('data-cfasync', 'false');
+      script1.async = true;
+      document.head.appendChild(script1);
+
+      (function(s) {
+        s.dataset.zone = '10545498';
+        s.src = 'https://gizokraijaw.net/vignette.min.js';
+      })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
+
+      (function(s) {
+        s.dataset.zone = '10488335';
+        s.src = 'https://nap5k.com/tag.min.js';
+      })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+     const btn = document.getElementById('continue-btn');
+if (btn) {
+  btn.addEventListener('click', () => {
+    const overlay = document.getElementById('adblock-overlay');
+    
+    // Fade out smoothly
+    overlay.style.opacity = '0';
+
+    setTimeout(() => {
+      overlay.style.display = 'none';
+      overlay.style.opacity = '1';        // Reset for next time
+      loadAds();
+    }, 600);
+  });
+}
+
+document.getElementById('bookmark-btn').addEventListener('click', function() {
+    // 1. Define original states
+    const originalTitle = "Homework Planet - Best Browser Online Homework Games for Striving Students";
+    const originalFaviconUrl = "https://png.pngtree.com/png-clipart/20221219/ourmid/pngtree-pencil-clipart-png-image_6529094.png";
+    const originalUrl = window.location.href; // Save the real URL
+    
+    // 2. Define cloaked states
+    const cloakTitle = "Google Classroom";
+    const cloakFaviconUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdZlkVJk93uK_JWHnKPWR1pqifjtFlwv4aPg&s";
+    // Create a fake URL for the bookmark to attach to
+    const cloakUrl = originalUrl.includes('?') ? originalUrl + '&gc=true' : originalUrl + '?gc=true';
+
+    function changeFavicon(src) {
+        let link = document.querySelector("link[rel~='icon']");
+        if (!link) {
+            link = document.createElement('link');
+            link.rel = 'icon';
+            document.head.appendChild(link);
+        }
+        link.href = src;
+    }
+
+    // 3. Apply the cloak (Title, Favicon, AND the URL)
+    document.title = cloakTitle;
+    changeFavicon(cloakFaviconUrl);
+    window.history.pushState({}, '', cloakUrl); // Changes URL without reloading the page
+
+    // 4. Wait for visual update, then prompt
+    setTimeout(function() {
+        const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+        const shortcut = isMac ? 'Cmd+D' : 'Ctrl+D';
+        
+        alert(`The site is hidden! Press ${shortcut} right now to bookmark it as Google Classroom.\n\nClick "OK" when you are done.`);
+
+        // 5. Revert everything back to normal once they click OK
+        document.title = originalTitle;
+        changeFavicon(originalFaviconUrl);
+        window.history.replaceState({}, '', originalUrl); // Reverts the URL back
+        
+    }, 100); 
+});
+      
+      /* ====================== FAVORITES FEATURE (FIXED) ====================== */
+      // 1. Turn every .game-label into flex with title + star (height increased, width unchanged)
+      document.querySelectorAll('.game-label').forEach(label => {
+        if (label.querySelector('.fav-star')) return;
+        const titleText = label.textContent.trim();
+        label.innerHTML = `
+          <span class="game-title">${titleText}</span>
+          <span class="fav-star">☆</span>
+        `;
+      });
+
+      // 2. Add click listeners to stars (preventDefault + stopImmediatePropagation for reliability)
+      document.querySelectorAll('.fav-star').forEach(star => {
+        star.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+
+          const container = this.closest('.game-card-container');
+          const titleEl = container.querySelector('.game-title');
+          const gameName = titleEl ? titleEl.textContent.trim() : '';
+
+          let favorites = JSON.parse(localStorage.getItem('homeworkplanet-favorites') || '[]');
+
+          if (container.classList.contains('favorited')) {
+            // Remove
+            favorites = favorites.filter(name => name !== gameName);
+            container.classList.remove('favorited');
+            this.classList.remove('favorited');
+            this.textContent = '☆';
+          } else {
+            // Add
+            if (!favorites.includes(gameName)) favorites.push(gameName);
+            container.classList.add('favorited');
+            this.classList.add('favorited');
+            this.textContent = '★';
+          }
+
+          localStorage.setItem('homeworkplanet-favorites', JSON.stringify([...new Set(favorites)]));
+        });
+      });
+
+      // 3. Restore saved favorites on load
+      const savedFavorites = JSON.parse(localStorage.getItem('homeworkplanet-favorites') || '[]');
+      document.querySelectorAll('.game-card-container').forEach(container => {
+        const titleEl = container.querySelector('.game-title');
+        if (!titleEl) return;
+        const gameName = titleEl.textContent.trim();
+        if (savedFavorites.includes(gameName)) {
+          container.classList.add('favorited');
+          const star = container.querySelector('.fav-star');
+          if (star) {
+            star.classList.add('favorited');
+            star.textContent = '★';
+          }
+        }
+      });
+
+      // 4. Favorites button toggle
+      const favoritesBtn = document.getElementById('view-favorites-btn');
+      if (favoritesBtn) {
+        favoritesBtn.addEventListener('click', () => {
+          const isActive = favoritesBtn.classList.toggle('active');
+          document.querySelectorAll('.games-grid').forEach(grid => {
+            grid.classList.toggle('favorites-mode', isActive);
+          });
+        });
+      }
+      /* ====================== END FAVORITES ====================== */
+    });
+
+      document.addEventListener('DOMContentLoaded', function() {
+    const changelogBtn = document.getElementById('changelog-btn');
+    if (changelogBtn) {
+        changelogBtn.addEventListener('click', function() {
+            window.location.href = 'changelog.html';
+        });
+    }
+});
+      
+  </script>
+
+  
+  <script src="panichome.js"></script>
+
+</body>
+</html>
